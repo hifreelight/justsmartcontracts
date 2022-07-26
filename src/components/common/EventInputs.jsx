@@ -139,7 +139,7 @@ const EventInputs = props => {
                 .filter((value) => value.get('active') === true)
                 .map((value, key) => value.get('values'))
                 .toJS();
-
+            console.log("resultFilter: %o", resultingFilter);
             props.onClick(resultingFilter);
         }
     }
